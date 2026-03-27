@@ -9,10 +9,10 @@ int main() {
   cin.tie(0);
   int n;
   cin >> n;
-  vi numbers;
+  vi numbers(n);
+  cin >> numbers[n];
   for (int i = 1; i < n; i++) {
     bool uniform = true;
-    cin >> numbers[i];
     sort(all(numbers));
     if (numbers[i] + 1 != numbers[i + 1]) {
       uniform = false;
